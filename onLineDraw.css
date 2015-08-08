@@ -1,78 +1,118 @@
-body {
-	background : #fff;
-}
 *{
 	margin:0px;
 	padding:0px;
 }
+
+body {
+	background : #8DD3EA;
+}
+
 ul , li  {
 	list-style : none;
 }
 header {
-	width:200px;
-	height : 30px;
+	width:250px;
+	height : 35px;
 	margin : 10px auto;
 	line-height:30px;
 	text-align : center;
-	border:1px solid #000;
+}
+header h2 {
+	font-size : 30px;
 }
 
 section {
 	width:900px;
-	height:600px;
-	background : #999;
+	height:500px;
+	background : #A29A9A;
 	margin:0px auto;
 	padding : 10px;
 }
 
 nav {
 	width : 900px;
-	height : 130px;
-	background : #fff;
+	height : 110px;
+	background : #CCC7C7;
 }
 nav ul {
 	width : 178px;
-	height : 130px;
-	border : 1px solid #eee;
+	height : 110px;
+	border : 1px solid orange;
 	float : left;
+	text-align : center;
 }
-
-#tool img , #shape img{ 
+footer {
+	width : 300px;
+	height : 35px;
+	margin : 5px auto;
+	text-align : center;
+	line-height:35px;
+}
+/********图像栏样式********/
+#image li {
+	list-style:square outside;
+	margin-top :-5px;
+	border:1px solid #000;
+	width: 70px;
+    margin-left: 59px;
+    line-height: 17px;
+    text-align: center;
+}
+#image .firstLi {
+	margin-top:1px;
+}
+/******工具栏样式**********/
+#tool img { 
  width : 20px;
  height:19px;
 }
-#tool li,#shape li {
+#tool li  {
 	width : 45px;
 	height : 20px;
 	float : left;
 	border: 1px solid #333;
-	margin-top:20px;
+	margin-top:15px;
 }
 li.firstLi  {
 	margin-left : 20px;
 }
-/*形状栏*/
-
-/*线宽选择*/
+/********形状栏*************/
+#shape li {
+	width : 45px;
+	height : 20px;
+	float : left;
+	border: 1px solid #333;
+	margin-top:15px;
+}
+#shape img{ 
+ width : 20px;
+ height:19px;
+}
+/*********线宽选择*********/
 #line li {
-	width : 90px;
+	width : 105px;
 	margin-left : 40px;
-	height : 10px;
-	margin:15px auto;
+	height : 15px;
+	margin:0px auto;
+	/*border:1px solid red; */
+}
+#line .firstLi {
+	margin-top:15px;
 }
 #line img {
-	width : 90px;
-	height : 10px;
+	width : 100px;
+	position: relative;
+    top: -5px;
 }
 
-/*颜色选择*/
+/***********颜色选择********/
 #color li {
 	width : 20px;
 	height : 20px;
 	border:1px solid #000;
 	float : left;
-	margin-left:8px;
-	margin-top:15px;
+	margin-left:6px;
+	margin-top:12px;
 }
 
 #color li.firstLi  {
@@ -81,4 +121,11 @@ li.firstLi  {
 
 li:hover {
 border: 2px; solid whitesmoke;
+}
+/******canvas画图区域******/
+canvas {
+	width : 900px;
+	height : 380px;
+	background:#fff;
+	margin-top:10px;
 }
