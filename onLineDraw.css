@@ -1,0 +1,84 @@
+body {
+	background : #fff;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+ul , li  {
+	list-style : none;
+}
+header {
+	width:200px;
+	height : 30px;
+	margin : 10px auto;
+	line-height:30px;
+	text-align : center;
+	border:1px solid #000;
+}
+
+section {
+	width:900px;
+	height:600px;
+	background : #999;
+	margin:0px auto;
+	padding : 10px;
+}
+
+nav {
+	width : 900px;
+	height : 130px;
+	background : #fff;
+}
+nav ul {
+	width : 178px;
+	height : 130px;
+	border : 1px solid #eee;
+	float : left;
+}
+
+#tool img , #shape img{ 
+ width : 20px;
+ height:19px;
+}
+#tool li,#shape li {
+	width : 45px;
+	height : 20px;
+	float : left;
+	border: 1px solid #333;
+	margin-top:20px;
+}
+li.firstLi  {
+	margin-left : 20px;
+}
+/*形状栏*/
+
+/*线宽选择*/
+#line li {
+	width : 90px;
+	margin-left : 40px;
+	height : 10px;
+	margin:15px auto;
+}
+#line img {
+	width : 90px;
+	height : 10px;
+}
+
+/*颜色选择*/
+#color li {
+	width : 20px;
+	height : 20px;
+	border:1px solid #000;
+	float : left;
+	margin-left:8px;
+	margin-top:15px;
+}
+
+#color li.firstLi  {
+	margin-left : 20px;
+}
+
+li:hover {
+border: 2px; solid whitesmoke;
+}

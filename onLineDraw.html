@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>HTML5在线画图板</title>
+<link href = "onLineDraw.css" type = "text/css"  rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<h2>HTML5在线画图板</h2>
+	</header>
+	<section>
+	 <nav>
+		<ul class = "title">
+		<h3>图像</h3>
+			<hr />
+			<li class = "imageItem">保存图片</li>
+			</br>
+			<li class = "imageItem" >清空画板</li>
+			</br>
+			<li class = "imageItem" >撤销操作</li>
+		</ul>
+		<ul class = "title" id = "tool">
+			<h3>工具</h3>
+			<hr />
+			<li class = "firstLi"><img src ="../images/Brush.png" /></li>
+			<li><img src = "../images/Eraser.png"/></li>
+			<li><img src = "../images/Paint.png"/></li>
+			<li class = "firstLi"><img src = "../images/Straw.png"/></li>
+			<li><img src = "../images/text.png"/></li>
+			<li><img src = "../images/Magnifier.png"/></li>
+		</ul >
+		<ul class = "title" id = "shape">
+			<h3>形状</h3>
+			<hr />
+			<li class = "firstLi"><img src = "../images/line.png"/></li>
+			<li><img src = "../images/arc.png"/></li>
+			<li><img src = "../images/rect.png"/></li>
+			<li class = "firstLi"><img src = "../images/poly.png"/></li>
+			<li><img src = "../images/arcfill.png"/></li>
+			<li><img src = "../images/rectfill.png"/></li>
+		</ul>
+		<ul class = "title" id = "line">
+			<h3>线宽</h3>
+			<hr />
+			<li><img src = "../images/line1px.png"/></li>
+			<li><img src = "../images/line3px.png"/></li>
+			<li><img src = "../images/line5px.png"/></li>
+			<li><img src = "../images/line8px.png"/></li>
+		</ul>
+		<ul class = "title" id = "color">
+			<h3>颜色</h3>
+			<hr />
+			<li class = "firstLi" id = "red"></li>
+			<li id = "green"></li>
+			<li id = "blue"></li>
+			<li id = "yellow"></li>
+			<li id = "white"></li>
+			<li class = "firstLi" id = "black"></li>
+			<li id = "pink"></li>
+			<li id = "purple"></li>
+			<li id = "cyan"></li>
+			<li id = "orange"></li>
+		</ul>
+	 </nav>
+		<canvas width = "950" height = "590">您的浏览器不支持canvas标签，请升级浏览器或更换浏览器打开。。。。</canvas>
+	</section>
+	<footer>
+		最终解释权归@喵喵喵喵喵所有
+	</footer>
+	<script>
+		/*给颜色工具栏添加颜色*/
+		var oColor = document.getElementById("color");
+		var colorLi = oColor.getElementsByTagName("li");
+		for ( var i = 0 ; i < colorLi.length ; i++ )
+		{
+			colorLi[i].style.background = colorLi[i].getAttribute("id") ;
+		}
+	</script>
+</body>
+</html>
