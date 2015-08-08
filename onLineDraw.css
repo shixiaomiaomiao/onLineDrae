@@ -119,9 +119,6 @@ li.firstLi  {
 	margin-left : 20px;
 }
 
-li:hover {
-border: 2px; solid whitesmoke;
-}
 /******canvas画图区域******/
 canvas {
 	width : 900px;

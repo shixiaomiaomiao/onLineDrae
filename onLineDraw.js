@@ -7,5 +7,14 @@ window.onload = function()
 	{
 		colorLi[i].style.background = colorLi[i].getAttribute("id") ;
 	}
+	/*****给所有的li加上hover事件********/
+	var section = document.getElementsByTagName("section")[0];
+	var liArr = document.getElementsByTagName("li");
+	for ( var i = 0 ; i < liArr.length ; i++ )
+	{
+		liArr[i] function() {
+			
+		}
+	}
 }
 		
